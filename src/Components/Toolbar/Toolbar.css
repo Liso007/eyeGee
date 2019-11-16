@@ -1,0 +1,104 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #65CCB8;
+    height: 56px;
+}
+.toolbar_navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1em;
+}
+.toolbar_logo {
+    margin-left: 1rem;
+}
+.toolbar_logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-top: 1.3em;
+    animation: pulse 3s ease infinite;
+    box-shadow: 0px 0px 1px #ccc;
+    -moz-box-shadow: 0px 0px 1px #ccc;
+    -webkit-box-shadow: 0px 0px 1px #ccc;
+    -khtml-box-shadow: 0px 0px 1px #ccc;
+}
+
+@-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(2, 2, 2);
+      transform: scale3d(2, 2, 2);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(2, 2, 2);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+.toolbar_logo a {
+  color: #000000;
+  text-decoration: none;
+}
+.toolbar_logo-items {
+    display: flex;
+    text-align: center;
+}
+.toolbar_logo-items h1 {
+    margin-left: 0.5rem;
+    font-size: 28px;
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    line-height: 1.35;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 0 #969696;
+    outline: none;
+    
+}
+.spacer {
+    flex: 1;
+}
+.toolbar_navigation-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.toolbar_navigation-items li {
+    padding: 0 0.5rem;
+}
+.toolbar_navigation-items a {
+    color: #182628;
+    text-decoration: none;
+}
+.toolbar_navigation-items a:hover,
+.toolbar_navigation-items a:active{
+    color: #F2F2F2;
+}

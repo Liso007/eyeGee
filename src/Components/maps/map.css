@@ -1,0 +1,10 @@
+.bot {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.bot img {
+    width: 100%;
+    height: 100%;
+}

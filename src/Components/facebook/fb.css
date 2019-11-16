@@ -1,0 +1,38 @@
+.mainFB{
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+.fbuser{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 450px;
+    grid-template-areas: 
+    "........ header  .........  "
+    "........ content  ........"
+    "......... text  .......";
+}
+
+.welcome {
+    grid-area: header;
+}
+.picuser {
+    grid-area: content;
+}
+
+.emailuser{
+    grid-area: text;
+}
+
+.fbbtn{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: blue;
+    border: hidden;
+    width: 150px;
+    line-height: 40px;
+    border-radius: 50px;
+    margin: 20px;
+}
